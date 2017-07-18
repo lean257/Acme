@@ -28,8 +28,8 @@ router.post('/products', function(req, res) {
   } else if (!rating) {
     res.render('error', { error: "Rating is required"});
     return;
-  } else if (isNaN(rating)) {
-    res.render('error', { error: "Rating must be a number out of 100"});
+  } else if (isNaN(rating) || rating > 100) {
+    res.render('error', { error: "Rating must be a number less than 100"});
     return;
   }
   products.add(name, text, rating);

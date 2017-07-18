@@ -1,0 +1,22 @@
+{
+  "name": "acme",
+  "version": "1.0.0",
+  "description": "acme products",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lean257/Acme.git"
+  },
+  "author": "An Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lean257/Acme/issues"
+  },
+  "homepage": "https://github.com/lean257/Acme#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

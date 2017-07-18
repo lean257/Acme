@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>{{ product.name }}</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class='container'>
+      <a href='/products'>All Products</a>
+      <h1>Product - {{ product.name }}</h1>
+      <div>
+        Description - {{ product.description }}
+        <br />
+        Rating - {{ product.rating }}
+        <br />
+        <form action='/products/{{ product.id}}?_method=DELETE' method='POST'>
+          <button class='btn btn-danger'>Delete</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

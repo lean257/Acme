@@ -1,6 +1,6 @@
 {
   "name": "acme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "acme products",
   "main": "app.js",
   "scripts": {

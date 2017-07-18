@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/lean257/Acme#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "nunjucks": "^3.0.1",
+    "path": "^0.12.7"
   }
 }

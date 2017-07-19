@@ -1,4 +1,5 @@
-const _ = require('lodash')
+const _ = require('lodash');//do you need this
+//why all the cloning?
 
 var products = [
   {
@@ -37,7 +38,7 @@ function find (properties) {
 function max_rating() {
   return max = products.reduce(function(a,b) {
     return a.rating > b.rating ? a : b
-  })
+  });
 }
 
 function deleteProduct(id) {
@@ -46,4 +47,11 @@ function deleteProduct(id) {
   });
 }
 
-module.exports = { add: add, list: list, find: find, max_rating: max_rating, deleteProduct: deleteProduct };
+module.exports = {
+  add: add,
+  list: list,
+  find: find,
+  max_rating: max_rating,
+  deleteProduct:
+  deleteProduct
+};
